@@ -1,8 +1,15 @@
+## Dev start
 ```
 bun install
-bun run dev
+bun run start
 ```
 
 ```
-open http://localhost:3000
+open http://localhost:8787
 ```
+
+## Deploy
+```
+bun run deploy
+```
+
