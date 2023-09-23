@@ -2,6 +2,11 @@ name = "hono-worker-sample"
 main = "src/index.ts"
 compatibility_date = "2023-09-18"
 
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "hono-worker-sample"
+database_id = "204bb65e-d5c9-486d-ad59-9d7c170487a9"
+
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
 # Docs: https://developers.cloudflare.com/workers/platform/environment-variables
