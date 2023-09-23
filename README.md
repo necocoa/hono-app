@@ -37,3 +37,17 @@ production
 ```
 bun run wrangler d1 execute hono-worker-sample --command="SELECT name FROM sqlite_master WHERE type='table'"
 ```
+
+### Migrate
+
+```
+bun run wrangler d1 migrations create hono-worker-sample init
+```
+
+```
+bun run wrangler d1 migrations apply hono-worker-sample
+```
+
+```
+bun run wrangler d1 execute hono-worker-sample --command="SELECT * FROM d1_migrations;"
+```
